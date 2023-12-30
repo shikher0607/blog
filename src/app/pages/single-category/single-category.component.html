@@ -1,0 +1,14 @@
+<div class="bg-theme p-5">
+    <div class="container">
+        <h1 class="text-white">{{ params?.name }}</h1>
+    <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi dicta similique non nisi laboriosam, eaque labore tempore nesciunt pariatur officiis fuga, ut eveniet! Cum laudantium quo ad libero quod sed.</p>
+    </div>
+</div>
+
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-4 mb-3" *ngFor="let postByCategory of postsByCategory">
+            <app-post-card [postData]="postByCategory"></app-post-card>
+        </div>
+    </div>
+</div>
